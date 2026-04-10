@@ -40,8 +40,16 @@
         font-size: 18px;
       }
 
+      a:visited {
+        color: #e8dfd0;
+      }
+
       a:hover {
         color: #d8d0c2;
+      }
+
+      a:active {
+        color: #b8af9f;
       }
 
       #title-box {
@@ -81,23 +89,40 @@
       }
 
       #intro-heading {
-        width: 980px;
+        width: 960px;
         font-size: 60px;
         font-weight: 500;
         margin: 0 auto 15px auto;
         padding: 0 10px;
         color: #FAF4E7;
-        box-sizing: border-box;
       }
 
       #intro-text {
-        width: 980px;
+        width: 960px;
         font-size: 30px;
         font-weight: 400;
         margin: 0 auto;
         padding: 0 10px;
         color: #FAF4E7;
-        box-sizing: border-box;
+      }
+
+      .facts-table {
+        width: 980px;
+        margin: 25px auto 25px auto;
+        border-collapse: collapse;
+        color: #FAF4E7;
+      }
+
+      .facts-table th,
+      .facts-table td {
+        border: 1px solid #FAF4E7;
+        padding: 12px;
+        text-align: center;
+        font-size: 22px;
+      }
+
+      .facts-table th {
+        background-color: #111111;
       }
 
       .subheading-box {
@@ -105,8 +130,7 @@
         color: #000000;
         width: 100%;
         padding: 8px 20px;
-        margin: 20px 0 12px 0;
-        box-sizing: border-box;
+        margin: 25px 0 25px 0;
       }
 
       .subheading-text {
@@ -122,25 +146,35 @@
         width: 100%;
         padding: 20px;
         margin: 15px 0 12px 0;
-        box-sizing: border-box;
         min-height: 180px;
       }
 
       .info-text {
-        width: 980px;
+        width: 960px;
         margin: 0 auto;
         padding: 0 10px;
         font-size: 30px;
         font-weight: 400;
         line-height: 1.3;
         color: #000000;
-        box-sizing: border-box;
       }
 
       .info-text a {
         color: #000000;
         font-size: 30px;
         text-decoration: underline;
+      }
+
+      .info-text a:visited {
+        color: #000000;
+      }
+
+      .info-text a:hover {
+        color: #333333;
+      }
+
+      .info-text a:active {
+        color: #666666;
       }
 
       .left {
@@ -159,7 +193,13 @@
       .Mem2,
       .Mem3,
       .Milo,
-      .Tommy {
+      .Tommy,
+      .Patodi,
+      .Gobi,
+      .Luna,
+      .Saya,
+      .Jagga,
+      .Bonnie {
         width: 100%;
         height: auto;
         display: block;
@@ -167,30 +207,32 @@
       }
 
       .kids-text {
-        width: 980px;
+        width: 960px;
         font-size: 30px;
         font-weight: 400;
         margin: 0 auto;
         padding: 0 10px;
         color: #FAF4E7;
-        box-sizing: border-box;
       }
 
       .milo-heading,
-      .patodi-heading {
-        width: 980px;
+      .patodi-heading,
+      .luna-heading,
+      .jagga-heading {
+        width: 960px;
         font-size: 45px;
         font-weight: 500;
-        margin: 20px auto 15px auto;
+        margin: 35px auto 15px auto;
         padding: 0 10px;
         color: #FAF4E7;
         text-align: right;
-        box-sizing: border-box;
       }
 
       .milo-text,
-      .patodi-text {
-        width: 980px;
+      .patodi-text,
+      .luna-text,
+      .jagga-text {
+        width: 960px;
         font-size: 30px;
         font-weight: 400;
         margin: 0 auto;
@@ -198,22 +240,26 @@
         color: #FAF4E7;
         text-align: right;
         line-height: 1.5;
-        box-sizing: border-box;
       }
 
-      .tommy-heading {
-        width: 980px;
+      .tommy-heading,
+      .gobi-heading,
+      .saya-heading,
+      .bonnie-heading {
+        width: 960px;
         font-size: 45px;
         font-weight: 500;
-        margin: 20px auto 15px auto;
+        margin: 35px auto 15px auto;
         padding: 0 10px;
         color: #FAF4E7;
         text-align: left;
-        box-sizing: border-box;
       }
 
-      .tommy-text {
-        width: 980px;
+      .tommy-text,
+      .gobi-text,
+      .saya-text,
+      .bonnie-text {
+        width: 960px;
         font-size: 30px;
         font-weight: 400;
         margin: 0 auto;
@@ -221,7 +267,73 @@
         color: #FAF4E7;
         text-align: left;
         line-height: 1.5;
-        box-sizing: border-box;
+      }
+
+      .contact-section {
+        width: 980px;
+        margin: 20px auto 0 auto;
+        padding: 0 10px;
+      }
+
+      .contact-section::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .contact-image {
+        width: 350px;
+        height: auto;
+        float: left;
+        margin: 0 30px 0 0;
+      }
+
+      .contact-text-wrap {
+        width: 570px;
+        float: right;
+        text-align: right;
+        margin-top: 35px;
+      }
+
+      .contact-heading {
+        font-size: 45px;
+        font-weight: 500;
+        margin: 0 0 15px 0;
+        color: #FAF4E7;
+      }
+
+      .contact-text {
+        font-size: 30px;
+        font-weight: 400;
+        margin: 0 0 15px 0;
+        color: #FAF4E7;
+        line-height: 1.5;
+      }
+
+      .contact-email {
+        font-size: 22px;
+        font-weight: 400;
+        margin: 0;
+        color: #FAF4E7;
+        line-height: 1.5;
+      }
+
+      .contact-email a {
+        font-size: 22px;
+        color: #FAF4E7;
+        text-decoration: underline;
+      }
+
+      .contact-email a:visited {
+        color: #e8dfd0;
+      }
+
+      .contact-email a:hover {
+        color: #d8d0c2;
+      }
+
+      .contact-email a:active {
+        color: #b8af9f;
       }
 
       h2 {
@@ -240,11 +352,11 @@
   <body>
     <div class="content">
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/">About</a></li>
-        <li><a href="/">Memories</a></li>
-        <li><a href="/">My Kids</a></li>
-        <li><a href="/">Contact Me</a></li>
+        <li><a href="#about">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#memories">Memories</a></li>
+        <li><a href="#kids">My Kids</a></li>
+        <li><a href="#contact">Contact Me</a></li>
       </ul>
     </div>
 
@@ -253,76 +365,171 @@
       <p id="site-subtitle">A Very Normal Amount of Love for Animals</p>
     </div>
 
-    <img id="hero-image" src="BWCOW.jpg" alt="Animal and Oma banner image">
+    <img id="hero-image" src="BWCOW.jpg" width="1200" height="700" alt="Animal and Oma banner image">
 
     <div class="content">
-      <div id="intro-section">
-        <h1 id="intro-heading">Hi, I’m Oma!</h1>
+      <div id="about">
+        <div id="intro-section">
 
-        <p id="intro-text">
-          If you’ve ever heard the term “crazy cat lady,” that’s pretty much me, and then some. For as long as I can remember, animals have always been a huge part of my life.
-          <br><br>
-          I grew up on a farm surrounded by goats, chickens, a llama, and more dogs and cats than I could ever keep count of. Even after moving, that love never faded. If anything, it only grew stronger, along with the number of pets and the feeling of always being surrounded by so much love, comfort, and wonder.
-          <br><br>
-          This page is my small way of sharing a little piece of the love, admiration, and slight obsession I’ve always had for all my babies.
+          <table class="facts-table">
+            <tr>
+              <th>Section</th>
+              <th>What you’ll find</th>
+            </tr>
+            <tr>
+              <td>About Me</td>
+              <td>A short introduction to who I am and why animals mean so much to me.</td>
+            </tr>
+            <tr>
+              <td>Memories</td>
+              <td>Some of my favourite childhood memories and stories connected to animals.</td>
+            </tr>
+            <tr>
+              <td>My Kids</td>
+              <td>Meet my seven cats and one dog, each with their own little personality.</td>
+            </tr>
+            <tr>
+              <td>Contact</td>
+              <td>A way to get in touch with me by email.</td>
+            </tr>
+          </table>
+
+          <div class="subheading-box"></div>
+
+          <h1 id="intro-heading">Hi, I’m Oma!</h1>
+
+          <p id="intro-text">
+            If you’ve ever heard the term “crazy cat lady,” that’s pretty much me, and then some. For as long as I can remember, animals have always been a huge part of my life.
+            <br><br>
+            I grew up on a farm surrounded by goats, chickens, a llama, and more dogs and cats than I could ever keep count of. Even after moving, that love never faded. If anything, it only grew stronger, along with the number of pets and the feeling of always being surrounded by so much love, comfort, and wonder.
+            <br><br>
+            This page is my small way of sharing a little piece of the love, admiration, and slight obsession I’ve always had for all my babies.
+          </p>
+        </div>
+      </div>
+
+      <div id="memories">
+        <div class="subheading-box">
+          <h2 class="subheading-text left">Memories</h2>
+        </div>
+
+        <img class="Mem1" src="Mem1.png" width="1200" height="800" alt="Memory photo">
+
+        <div class="info-box">
+          <p class="info-text">
+            Some of my favourite memories are the really small ones, like trying to pet every cat I saw, getting way too excited over baby animals, and always paying more attention to the animals than anything else around me.
+            <br><br>
+            I was definitely the kind of kid who could stay entertained just watching them for hours.
+          </p>
+        </div>
+
+        <img class="Mem2" src="Mem2.png" width="1200" height="800" alt="Second memory photo">
+
+        <div class="info-box">
+          <p class="info-text">
+            One of the memories that stands out most from growing up in Vancouver was seeing bears roam behind our house and around the farm, usually stopping to pick berries. It was such a surreal but normal part of life there, and it made my childhood memories with animals feel even more special.
+            <br><br>
+            Moments like that gave me an early fascination with wildlife, especially <a href="https://www.youtube.com/watch?v=g2aaow1PphI" target="_blank">black and brown bears</a>, and made me appreciate just how amazing it was to grow up so close to nature.
+          </p>
+        </div>
+
+        <img class="Mem3" src="Mem3.png" width="1200" height="800" alt="Third memory photo">
+      </div>
+
+      <div id="kids">
+        <div class="subheading-box">
+          <h2 class="subheading-text left">My Kids</h2>
+        </div>
+
+        <p class="kids-text">
+          This section is about my current crew, seven cats and one dog, and the ones who colour my life now.
         </p>
-      </div>
 
-      <div class="subheading-box">
-        <h2 class="subheading-text left">Memories</h2>
-      </div>
+        <h1 class="milo-heading">Milo The Oldest Son</h1>
 
-      <img class="Mem1" src="Mem1.png" alt="Memory photo">
-
-      <div class="info-box">
-        <p class="info-text">
-          Some of my favourite memories are the really small ones, like trying to pet every cat I saw, getting way too excited over baby animals, and always paying more attention to the animals than anything else around me.
-          <br><br>
-          I was definitely the kind of kid who could stay entertained just watching them for hours.
+        <p class="milo-text">
+          Milo was our first cat after many years, and as a little Covid baby, he quickly became my sunshine sunflower. I have the closest bond with that orange chunk, and he definitely carries himself like he runs the whole crew.
         </p>
-      </div>
 
-      <img class="Mem2" src="Mem2.png" alt="Second memory photo">
+        <img class="Milo" src="Milo.png" width="1200" height="800" alt="Milo photo">
 
-      <div class="info-box">
-        <p class="info-text">
-          One of the memories that stands out most from growing up in Vancouver was seeing bears roam behind our house and around the farm, usually stopping to pick berries. It was such a surreal but normal part of life there, and it made my childhood memories with animals feel even more special.
-          <br><br>
-          Moments like that gave me an early fascination with wildlife, especially <a href="https://www.youtube.com/watch?v=g2aaow1PphI" target="_blank">black and brown bears</a>, and made me appreciate just how amazing it was to grow up so close to nature.
+        <h1 class="tommy-heading">Tommy The Sweetie Pie</h1>
+
+        <p class="tommy-text">
+          Tommy was the stray who came into our family after a vacation. He’s the sweetest, most social boy who loves attention and will plop onto the floor anywhere the moment someone starts petting him. He’s also a little hunter at heart and loves bringing home mice or birds for the family.
         </p>
+
+        <img class="Tommy" src="Tommy.png" width="1200" height="800" alt="Tommy photo">
+
+        <h1 class="patodi-heading">Patodi, Once Known As Lila</h1>
+
+        <p class="patodi-text">
+          Patodi was also a Covid baby. My sister got him from a friend, and we originally thought he was a girl, so we named him Lilia. Later on, we found out he was actually a boy, and his name became Patodi. As he grew up, he turned into the sweetest, most anxious little boy. Over time, even his looks changed, his fur went from white to brown, and now he honestly looks like a completely different cat.
+        </p>
+
+        <img class="Patodi" src="Patodi.png" width="1200" height="800" alt="Patodi photo">
+
+        <h1 class="gobi-heading">Gobi The Sassy Women</h1>
+
+        <p class="gobi-text">
+          Gobi was another stray that my sister found in a junkyard on her way to work. She brought her home all dirty and smelly, and that’s how Gobi ended up with us. She never really grew properly and stayed super tiny, which somehow matches how weird she is. She’s a bit of a creepy girl and loves staring at people from random corners of the house, but when you catch her alone, she’s actually really sweet.
+        </p>
+
+        <img class="Gobi" src="Gobi.png" width="1200" height="800" alt="Gobi photo">
+
+        <h1 class="luna-heading">Luna The Empath</h1>
+
+        <p class="luna-text">
+          Luna is one of the smartest cats I’ve ever met. She’s technically my sister’s cat, but since she lives with the rest of us, I like to think of myself as her aunty. She loves pets, but she’s very selective about her people, so once you’re chosen, it makes you feel extra special. Somehow, every time I get sick, it’s like she knows. She always comes over to give me little headbutts and keep me company.
+        </p>
+
+        <img class="Luna" src="Luna.png" width="1200" height="800" alt="Luna photo">
+
+        <h1 class="saya-heading">Saya The Lattle One</h1>
+
+        <p class="saya-text">
+          Saya is a little stinker. Half the time, it seems like there’s nothing behind those eyes except thoughts of games, toys, and snacks. She’s really just a playful kitten trapped in a grown cat’s body. She’s more of a lone wolf, but she never says no to coming by for morning biscuits.
+        </p>
+
+        <img class="Saya" src="Saya.png" width="1200" height="800" alt="Saya photo">
+
+        <h1 class="jagga-heading">Jaga The Biter</h1>
+
+        <p class="jagga-text">
+          Jagga is still a bit newer to me, so we’re both still figuring each other out and building our connection. He has a little bit of sass to him and will bite every now and then, but he absolutely loves his games. He’s more of a loner and still seems to be finding his place with the rest of the group. Most of the time, you’ll catch him trailing behind the orange cats around the house, like he’s trying to be part of the big brother crew.
+        </p>
+
+        <img class="Jagga" src="Jagga.png" width="1200" height="800" alt="Jagga photo">
+
+        <h1 class="bonnie-heading">Bonnie/ My Shayla</h1>
+
+        <p class="bonnie-text">
+          And finally, my stinky little girl. Bonnie is the family dog after many years of us not having one, and I honestly do not even know how to explain how crazy she is. She is always on level 100, and if anyone has a toy or a snack, Bonnie will be there immediately. She’s the happiest little sister and loves annoying her brothers. Since she grew up around cats, she now fully seems to think she’s one of them, which makes everything even funnier.
+        </p>
+
+        <img class="Bonnie" src="Bonnie.png" width="1200" height="800" alt="Bonnie photo">
       </div>
 
-      <img class="Mem3" src="Mem3.png" alt="Third memory photo">
+      <div id="contact">
+        <div class="subheading-box">
+          <h2 class="subheading-text left">Contact Me</h2>
+        </div>
 
-      <div class="subheading-box">
-        <h2 class="subheading-text left">My Kids</h2>
+        <div class="contact-section">
+          <img class="contact-image" src="Contact.png" width="350" height="350" alt="Contact image">
+
+          <div class="contact-text-wrap">
+            <h1 class="contact-heading">One last thing!</h1>
+            <p class="contact-text">
+              Thank you for taking the time to look through my page and learn a little more about such a special interest of mine. Animals have always meant so much to me, so it was nice being able to share a small piece of that here.
+            </p>
+            <p class="contact-email">
+              To get in touch you can reach me at:
+              <a href="mailto:o3tahir@uwaterloo.ca">o3tahir@uwaterloo.ca</a>
+            </p>
+          </div>
+        </div>
       </div>
-
-      <p class="kids-text">
-        This section is about my current crew, seven cats and one dog, and the ones who colour my life now.
-      </p>
-
-      <h1 class="milo-heading">Milo The Oldest Son</h1>
-
-      <p class="milo-text">
-        Milo was our first cat after many years, and as a little Covid baby, he quickly became my sunshine sunflower. I have the closest bond with that orange chunk, and he definitely carries himself like he runs the whole crew.
-      </p>
-
-      <img class="Milo" src="Milo.png" alt="Milo photo">
-
-      <h1 class="tommy-heading">Tommy The Sweetie Pie</h1>
-
-      <p class="tommy-text">
-        Tommy was the stray who came into our family after a vacation. He’s the sweetest, most social boy who loves attention and will plop onto the floor anywhere the moment someone starts petting him. He’s also a little hunter at heart and loves bringing home mice or birds for the family.
-      </p>
-
-      <img class="Tommy" src="Tommy.png" alt="Tommy photo">
-
-      <h1 class="patodi-heading">Patodi, Once Known As Lila</h1>
-
-      <p class="patodi-text">
-        Patodi was also a Covid baby. My sister got him from a friend, and we originally thought he was a girl, so we named him Lilia. Later on, we found out he was actually a boy, and his name became Patodi. As he grew up, he turned into the sweetest, most anxious little boy. Over time, even his looks changed, his fur went from white to brown, and now he honestly looks like a completely different cat.
-      </p>
     </div>
   </body>
 </html>
